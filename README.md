@@ -26,5 +26,8 @@ ohne Git-Kenntnisse. Danach erneut **Build And Run**.
 ## Lizenzen
 
 `Packages/com.whisper.unity`: MIT-Lizenz, © Macoron ([whisper.unity](https://github.com/Macoron/whisper.unity)).
+Sprecherstimme der Kongo-Erklärung (`Assets/LogoPuzzle/Kongo/kongo_erklaerung.wav`): künstlich erzeugt mit
+[Piper](https://github.com/OHF-Voice/piper1-gpl), Stimme „Thorsten“ ([Thorsten-Voice](https://github.com/thorstenMueller/Thorsten-Voice), Datensatz CC0;
+das Stimmmodell basiert auf einem nur nicht-kommerziell nutzbaren Basismodell – daher nur für nicht-kommerzielle Zwecke).
 Meta XR SDK: Lizenz von Meta, wird über den Unity Package Manager geladen.
 Weitere Pakete und Assets unterliegen den Lizenzen ihrer jeweiligen Anbieter.

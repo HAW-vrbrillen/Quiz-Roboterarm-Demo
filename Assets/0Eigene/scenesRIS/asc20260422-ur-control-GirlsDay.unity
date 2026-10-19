@@ -29779,7 +29779,7 @@ MonoBehaviour:
   lobAudioProLogo:
   - {fileID: 8300000, guid: 4f740180712f2d24bbe571b1d8982105, type: 3}
   - {fileID: 8300000, guid: c54bf42dc8710f141af0afdc473ad94a, type: 3}
-  - {fileID: 8300000, guid: d9a677e324f60d7458de512c4220df73, type: 3}
+  - {fileID: 8300000, guid: 3dad2bb7e04c4b99a29b2f1728845d40, type: 3}
   alleRichtigAudio: {fileID: 0}
   untertitelAnzeige: {fileID: 1910834228}
   lobUntertitelProLogo:
@@ -29788,33 +29788,33 @@ MonoBehaviour:
   - 
   endSegmente:
   - text: Sehr gut!
-    start: 1.8
-    ende: 3.4
+    start: 0.3
+    ende: 1.6
   - text: "Kobalt, Coltan, Kongo \u2013 was haben sie mit euren Handys zu tun?"
-    start: 3.6
-    ende: 9.6
+    start: 1.6
+    ende: 5.79
   - text: Im Osten der Demokratischen Republik Kongo herrscht seit rund 30 Jahren
       Krieg.
-    start: 9.6
-    ende: 16.1
+    start: 5.79
+    ende: 10.86
   - text: "\xDCber 250 bewaffnete Gruppen k\xE4mpfen dort um Macht, Land und wertvolle
       Rohstoffe."
-    start: 16.1
-    ende: 22.6
+    start: 10.86
+    ende: 16.61
   - text: "Mit Gold und Coltan aus den Minen finanzieren sie ihre Waffen \u2013 so
       wird der Krieg immer weiter angeheizt."
-    start: 22.6
-    ende: 29.1
+    start: 16.61
+    ende: 22.49
   - text: Rund 6 Millionen Menschen sind im eigenen Land auf der Flucht.
-    start: 29.1
-    ende: 35.1
+    start: 22.49
+    ende: 26.21
   - text: "Und diese Rohstoffe k\xF6nnen auch in unseren Handys und Laptops landen."
-    start: 35.1
-    ende: 41.6
+    start: 26.21
+    ende: 30.39
   - text: "Mehr erfahrt ihr auf den beiden Infotafeln \u2013 dreht sie auch einmal
       um!"
-    start: 41.6
-    ende: 48.6
+    start: 30.39
+    ende: 34.25
   belohnungsBilder:
   - {fileID: 2113259138}
   - {fileID: 746772800}
