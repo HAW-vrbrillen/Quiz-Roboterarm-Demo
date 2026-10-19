@@ -433,7 +433,30 @@ public class DresselWelcomePanel : MonoBehaviour
         float x = lokal.x * skala.x, z = lokal.z * skala.z;
         bool ueberFlaeche = (x * x) / (rx * rx) + (z * z) / (rz * rz) <= 1f;
         abstandZurOberseite = (lokal.y - b.extents.y) * skala.y;
-        return ueberFlaeche && abstandZurOberseite <= maxDarueber && abstandZurOberseite >= -maxDarin;
+        if (ueberFlaeche && abstandZurOberseite <= maxDarueber && abstandZurOberseite >= -maxDarin)
+            return true;
+
+        // Die Werkzeugspitze ist ein unsichtbarer Punkt am Flansch. Von Hand berührt man den
+        // Knopf meist mit dem Rand des Flanschs – deshalb zählt auch, wenn ein sichtbares Teil
+        // am Ende des Arms (Achse 6 samt Anbauteilen) den Knopf berührt.
+        return EndeBeruehrtKnopf();
+    }
+
+    const float kBeruehrToleranz = 0.02f; // m
+
+    bool EndeBeruehrtKnopf()
+    {
+        var knopfRenderer = urikButton.GetComponent<Renderer>();
+        if (knopfRenderer == null || urikButton.joint6_T_Axis6 == null) return false;
+
+        Bounds knopf = knopfRenderer.bounds;
+        knopf.Expand(kBeruehrToleranz * 2f);
+        foreach (var r in urikButton.joint6_T_Axis6.GetComponentsInChildren<Renderer>())
+        {
+            if (r.enabled && knopf.Intersects(r.bounds))
+                return true;
+        }
+        return false;
     }
 
     void SetLogoWuerfelVisible(bool visible)
