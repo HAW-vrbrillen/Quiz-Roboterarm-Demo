@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.coplaydev.unity-mcp": "https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main",
     "com.meta.xr.sdk.all": "207.0.0",
     "com.meta.xr.sdk.interaction.ovr": "207.0.0",
     "com.unity.ide.rider": "3.0.39",
@@ -15,7 +14,6 @@
     "com.unity.visualscripting": "1.9.11",
     "com.unity.xr.management": "4.5.2",
     "com.unity.xr.openxr": "1.16.1",
-    "com.whisper.unity": "https://github.com/Macoron/whisper.unity.git?path=/Packages/com.whisper.unity",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.adaptiveperformance": "1.0.0",
     "com.unity.modules.ai": "1.0.0",

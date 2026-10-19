@@ -7,8 +7,7 @@ Mixed-Reality-Demo für die Meta Quest 3 (HAW Hamburg):
    inversen Kinematik des Roboters vergleichen
 
 **Unity-Version:** 6000.4.6f1 (Unity 6) mit *Android Build Support*
-**Außerdem nötig:** [Git](https://git-scm.com/downloads) – Unity lädt damit zwei Pakete
-(`whisper.unity`, `unity-mcp`) direkt von GitHub. Ohne Git lässt sich das Projekt nicht öffnen.
+Git wird nicht benötigt – alle Pakete sind enthalten oder kommen aus der Unity-Registry.
 
 ## Projekt auf die Brille bringen
 
@@ -26,5 +25,6 @@ ohne Git-Kenntnisse. Danach erneut **Build And Run**.
 
 ## Lizenzen
 
+`Packages/com.whisper.unity`: MIT-Lizenz, © Macoron ([whisper.unity](https://github.com/Macoron/whisper.unity)).
 Meta XR SDK: Lizenz von Meta, wird über den Unity Package Manager geladen.
 Weitere Pakete und Assets unterliegen den Lizenzen ihrer jeweiligen Anbieter.

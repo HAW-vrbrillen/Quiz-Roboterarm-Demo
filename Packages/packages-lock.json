@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "com.coplaydev.unity-mcp": {
-      "version": "https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.0.2"
-      },
-      "hash": "f26f389b940750456a962bd79c08f17cce37f727"
-    },
     "com.meta.xr.mrutilitykit": {
       "version": "207.0.0",
       "depth": 1,
@@ -363,11 +354,10 @@
       "url": "https://packages.unity.com"
     },
     "com.whisper.unity": {
-      "version": "https://github.com/Macoron/whisper.unity.git?path=/Packages/com.whisper.unity",
+      "version": "file:com.whisper.unity",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "275406258aca21fe7753cf0724a65f06fd464eea"
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
