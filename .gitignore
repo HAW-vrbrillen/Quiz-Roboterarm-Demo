@@ -1,0 +1,75 @@
+# Unity generated folders
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*_BurstDebugInformation_DoNotShip/
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
+
+# IDE / generated solution files
+.vs/
+.idea/
+.gradle/
+.consulo/
+ExportedObj/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+TempAssembly.dll
+
+# Builds
+/apks/
+*.apk
+*.aab
+*.app
+*.unitypackage
+
+# Plastic SCM (Unity Version Control)
+.plastic/
+
+# Misc
+sysinfo.txt
+crashlytics-build.properties
+~UnityDirMonSyncFile~*
+*.private
+*.private.meta
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Visual Studio 2022+ solution format
+*.slnx
+
+# Unity-Temp-Ordner
+/.utmp/
+
+# Meta Immersive Debugger: enthält die lokale IP-Adresse, wird pro Rechner erzeugt
+/Assets/Resources/DevAgentSettings.asset
+/Assets/Resources/DevAgentSettings.asset.meta
+
+# Blender-Dateien: brauchen ein installiertes Blender und werden nur von alten Szenen genutzt
+*.blend
+*.blend.meta
+*.blend1
+*.blend1.meta
