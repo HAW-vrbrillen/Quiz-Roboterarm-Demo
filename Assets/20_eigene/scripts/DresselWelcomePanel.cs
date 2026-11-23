@@ -514,6 +514,11 @@ public class DresselWelcomePanel : MonoBehaviour
             mat.SetFloat("_Blend", 0);
             mat.SetFloat("_SrcBlend", (float)UnityEngine.Rendering.BlendMode.SrcAlpha);
             mat.SetFloat("_DstBlend", (float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+            // Alphakanal wie URP bei „Alpha“ mischen (Standard wäre: überschreiben). Sonst setzt
+            // der Würfel den Bildpunkt auf 10–35 % Deckkraft, und Passthrough scheint durch –
+            // der Glow ist auf der Brille praktisch unsichtbar.
+            mat.SetFloat("_SrcBlendAlpha", (float)UnityEngine.Rendering.BlendMode.One);
+            mat.SetFloat("_DstBlendAlpha", (float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
             mat.SetFloat("_ZWrite", 0);
             mat.SetFloat("_AlphaClip", 0);
             mat.renderQueue = 3000;
