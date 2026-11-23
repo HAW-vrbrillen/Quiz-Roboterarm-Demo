@@ -41,6 +41,10 @@ public class DresselWelcomePanel : MonoBehaviour
     [Tooltip("URIKButton für Arm-Reset in Ausgangsposition")]
     public URIKButton urikButton;
 
+    [Header("Sound")]
+    [Tooltip("Erfolgston, wenn der Roboter den roten Knopf berührt. Leer = Resources/erfolg_knopf")]
+    public AudioClip erfolgSound;
+
     // ── Intern ──────────────────────────────────────────────────────
     private int currentStep;
     private TMP_Text inhaltText;
@@ -48,6 +52,7 @@ public class DresselWelcomePanel : MonoBehaviour
     private PokeInteractable pokeInteractable;
     private bool waitingForPuzzle;
     private bool challengeRunning;
+    private AudioSource soundQuelle;
 
     static readonly string[] stepTexte = new string[]
     {
@@ -133,6 +138,12 @@ public class DresselWelcomePanel : MonoBehaviour
 
         if (pokeInteractable != null)
             pokeInteractable.WhenSelectingInteractorAdded.Action += OnPoked;
+
+        if (erfolgSound == null)
+            erfolgSound = Resources.Load<AudioClip>("erfolg_knopf");
+        soundQuelle = gameObject.AddComponent<AudioSource>();
+        soundQuelle.playOnAwake = false;
+        soundQuelle.spatialBlend = 0f; // 2D: überall gleich laut hörbar
 
         // Roboter initial verstecken
         SetRoboterVisible(false);
@@ -333,6 +344,9 @@ public class DresselWelcomePanel : MonoBehaviour
 
         float manuelleZeit = Time.time - startTime;
         Debug.Log($"DresselWelcomePanel: Manuell geschafft in {manuelleZeit:F1}s");
+
+        if (erfolgSound != null && soundQuelle != null)
+            soundQuelle.PlayOneShot(erfolgSound);
 
         if (inhaltText != null)
             inhaltText.text = $"Geschafft in {manuelleZeit:F1}s!\n\nRoboter wird zurückgesetzt...";
